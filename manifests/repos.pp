@@ -21,8 +21,6 @@ class docker::repos {
           location          => $location,
           release           => $docker::package_release,
           repos             => $docker::package_repos,
-          key               => $package_key,
-          key_source        => $key_source,
           key         => {
             id => $package_key,
             source => $key_source
